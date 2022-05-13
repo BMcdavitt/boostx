@@ -1,0 +1,310 @@
+body {
+    margin: 0;
+    font-family: 'Manrope';
+    background-color: #FAFBFF;
+}
+
+.header {
+    background-color: rgba(0, 174, 165, 0.35);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+
+}
+
+.headerNavList {
+    list-style-type: none;
+    display: flex;
+    align-items: baseline;
+
+    font-size: 14px;
+    line-height: 19px;
+
+}
+
+.headerNavList ul {
+
+}
+
+.lonleyMenu {
+    padding-top: 10px;
+}
+
+.headerNavList li {
+    margin: 0 2em 0 2em;
+  }
+
+button {
+    background: #40C8FF;
+    border-radius: 6px;
+    border: none;
+    color:#fff;
+    padding: 1em 2em;
+}
+
+
+.featuresTopSection {
+    display: flex;
+    background: linear-gradient(180deg, rgba(0, 174, 165, 0.35) 0%, rgba(0, 174, 165, 0) 100%);
+    padding: 0 50px;
+}
+
+.featuresKeyFeaturesSection{
+    text-align: center;
+}
+
+.featuresKeyFeaturesSection p {
+    padding: 0 10em;
+}
+
+h1 {
+    font-size: 70px;
+    line-height: 80px;
+    letter-spacing: -0.03em;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 42px;
+    line-height: 60px;
+}
+
+.featureCards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.featuresCard {
+
+    display: flex;
+    flex-direction: column;
+
+    width: 275px;
+    height: 250px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 14px 24px rgba(0, 0, 0, 0.04);
+    border-radius: 20px;
+
+    margin: 20px;
+
+    
+
+    font-weight: 800;
+    font-size: 22px;
+    
+    
+
+
+}
+
+.featuresCard img {
+    display: block;
+    margin: 50px auto 10px auto;
+
+    width: 60px;
+}
+
+.featuresCardText {
+    margin: 0 50px;
+}
+
+.featuresFeaturedProjects {
+    background-color: #E6F5F8;
+    text-align: center;
+}
+
+.featuresFeaturedProjects p {
+    padding: 0 10em;
+}
+
+.festuresFeaturedProjectCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.featuredCard {
+
+    display: flex;
+    flex-direction: column;
+
+    width: 580px;
+    height: 514px;
+    left: 125px;
+    top: 1949px;
+
+    margin: 20px;
+
+    background: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 0px 14px 24px rgba(0, 0, 0, 0.04);
+}
+
+.featuredCard img {
+    width: 120px;
+}
+
+.featuredCardTop {
+    margin: 60px;
+    display: flex;
+    flex-direction: row;
+}
+
+.featuredCardSaleInfo {
+    
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+
+    color: #01A6DB;
+}
+
+.featuredCardTopRight {
+    text-align: left;
+    margin-left: 30px;
+}
+
+.featuredCardDescription {
+    text-align: left;
+    margin: 0 60px 20px 60px;
+
+    
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+
+    color: #64607D;
+}
+
+.featuredCardIconTextGroup {
+    text-align: left;
+    margin-bottom: 10px;
+
+    
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    
+    letter-spacing: -0.02em;
+    color: #64607D;
+
+}
+
+.featuredCardIconTextGroup img {
+    width: 20px;
+    margin: 0 10px 0 60px;
+}
+
+.featuredCardButtonGroup {
+    display: flex;
+    justify-content: center;
+}
+
+.featuresFeaturedProjects button {
+    margin: 30px 10px;
+    width: 250px;
+}
+
+.specialButton {
+    color: #00AEA5;
+    background-color: #fff;
+    border: 1px solid;
+
+}
+
+.featuredCardPrsaleText {
+    margin-left: 30px;
+    margin-top: 30px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    text-align: right;
+    letter-spacing: -0.02em;
+}
+
+.feturedCardPresalePrice {
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 22px;
+    /* identical to box height */
+
+    text-align: right;
+    letter-spacing: -0.02em;
+
+    color: #00AEA5;
+}
+
+.featuresBottomSection {
+    background-color: #00AEA5;
+    display: flex;
+    padding-left: 50px;
+    color: #fff
+}   
+
+.featuresBottomSectionLeft h2 {
+
+}
+
+.featuresBottomSecitonRight p {
+
+}
+
+.featuresBottomSecitonRight img {
+    height: 100%;
+
+}
+
+.footer {
+    margin-top: 50px;
+}
+
+.footerTop {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.footerTopLeft {
+    display: flex;
+    justify-content: space-between;
+    height: 25px;
+}
+
+.footerTopMiddle {
+    width: 40%;
+
+}
+
+.footerTopMiddleLogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.footerTopRight {
+    display: flex;
+    flex-direction: column;
+}
+
+.socialMediaLinks{
+    margin: auto;
+    width:fit-content;
+}
+
+.socialMediaLinks img {
+    margin-right: 10px;
+}
+
+.footerBottom {
+    margin: auto;
+    width:fit-content;
+}
+
+.emptySpace {
+    height: 50px;
+}
