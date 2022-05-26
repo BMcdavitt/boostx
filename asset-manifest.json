@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/boostx/static/js/main.cb2f04fa.js",
-    "index.html": "/boostx/index.html",
-    "main.cb2f04fa.js.map": "/boostx/static/js/main.cb2f04fa.js.map"
+    "main.js": "../static/js/main.1db12a29.js",
+    "index.html": "../index.html",
+    "main.1db12a29.js.map": "../static/js/main.1db12a29.js.map"
   },
   "entrypoints": [
-    "static/js/main.cb2f04fa.js"
+    "static/js/main.1db12a29.js"
   ]
 }
