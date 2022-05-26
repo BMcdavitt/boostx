@@ -427,6 +427,14 @@ button {
     ;
 }
 
+.footerTopLeft {
+    display: flex;
+    height: 25px;
+    grid-area: footerTopLeft;
+    margin: auto;
+
+}
+
 @media screen and (max-width: 750px){
 
     .footerTop {
@@ -438,17 +446,14 @@ button {
         "footerTopLeft footerTopLeft footerTopLeft footerTopLeft"
         ;
     }
+
+    .footerTopRight {
+        text-align: center;
+    }
 }
 
 
-.footerTopLeft {
-    display: flex;
-    /* justify-content: space-between; */
-    height: 25px;
-    grid-area: footerTopLeft;
-    margin: auto;
 
-}
 
 .footerTopMiddle {
     /* width: 40%; */
