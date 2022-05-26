@@ -142,17 +142,17 @@ button {
         grid-column: 8 / 13;
     }
 }
-}
+
 
 
 
 
 .featuresKeyFeaturesSection{
-    /* text-align: center; */
+    text-align: center;
 }
 
 .featuresKeyFeaturesSection p {
-    /* padding: 0 10%; */
+
     margin: auto;
     width: 80%;
 
@@ -169,6 +169,10 @@ button {
     font-size: 42px;
     line-height: 60px;
     text-align: center;
+}
+
+.featuresFeaturedProjects {
+    padding-top: 20px;
 }
 
 .featureCards {
@@ -413,20 +417,42 @@ button {
 }
 
 .footerTop {
-    display: flex;
-    justify-content: space-around;
-
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: 
+        "footerTopLeft footerMiddle footerMiddle footerTopRight"
+        "footerTopLeft footerMiddle footerMiddle footerTopRight"
+        "footerTopLeft footerMiddle footerMiddle footerTopRight"
+    ;
 }
+
+@media screen and (max-width: 750px){
+
+    .footerTop {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: 
+        "footerMiddle footerMiddle footerMiddle footerMiddle"
+        "footerTopRight footerTopRight footerTopRight footerTopRight"
+        "footerTopLeft footerTopLeft footerTopLeft footerTopLeft"
+        ;
+    }
+}
+
 
 .footerTopLeft {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     height: 25px;
+    grid-area: footerTopLeft;
+    margin: auto;
+
 }
 
 .footerTopMiddle {
-    width: 40%;
-
+    /* width: 40%; */
+    grid-area: footerMiddle;
 }
 
 .footerTopMiddleLogo {
@@ -439,8 +465,10 @@ button {
 .footerTopRight {
     display: flex;
     flex-direction: column;
+    grid-area: footerTopRight;
+    margin: auto;
+    padding-bottom: 20px;
 }
-
 .socialMediaLinks{
     margin: auto;
     width:fit-content;
