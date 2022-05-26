@@ -96,7 +96,7 @@ export default function Features() {
             <div className="featuresBottomSection">
                 <div className="featuresBottomSectionLeft">
                     <h2 className="textWhite">Bring Investors and High Quality Projects Together</h2>
-                    <p>Boostx provides its community with fair access to exclusive early-stage presale opportunities, allowing you to acquire highly-anticipated tokens before they hit the market; while simultaneously giving innovative projects the ability to crowdsource funding and build a strong and loyal community in the process.</p>
+                    <p>Boostx provides its community with fair access to exclusive early-stage presale opportunities, allowing you to acquire highly-anticipated tokens before they hit the market; while simultaneously giving innovative projects the ability to crowdsource funding and build a strong and loyal community in the process.  Using our extensive marketing experience, boostx successfully facillitates the launches of multiple high quality blockchain projects.</p>
                 </div>
                 <div className="featuresBottomSecitonRight">
                     <img src="images/bottomImage.png" alt="A rocket launching out of a laptop computer" />

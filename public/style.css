@@ -12,9 +12,14 @@ body {
 
 }
 
-.headerNavList {
+.header img {
+    margin: auto 0;
+}
+
+.headerNavListMid {
     list-style-type: none;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     align-items: baseline;
 
     font-size: 14px;
@@ -22,17 +27,48 @@ body {
 
 }
 
-.headerNavList ul {
+.headerNavListMid li {
+    padding: 10px;
+    margin: auto;
+}
 
+.headerNavListRight {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: baseline;
+
+    font-size: 14px;
+    line-height: 19px;
+
+}
+
+.headerNavListRight li {
+    padding: 10px;
+    margin: auto;
 }
 
 .lonleyMenu {
     padding-top: 10px;
 }
 
-.headerNavList li {
-    margin: 0 2em 0 2em;
-  }
+@media screen and (min-width: 750px){
+    .moreMenu {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 750px){
+    .headerNavListRight {
+        display: none;
+    }
+
+    .headerNavListMid {
+        display: none;
+    }
+    
+}
 
 button {
     background: #40C8FF;
@@ -44,29 +80,95 @@ button {
 
 
 .featuresTopSection {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
     background: linear-gradient(180deg, rgba(0, 174, 165, 0.35) 0%, rgba(0, 174, 165, 0) 100%);
-    padding: 0 50px;
+    padding: 0;
 }
 
-.featuresKeyFeaturesSection{
+.featuresTopSectionLeft{
+    grid-column: 2 / 12;
     text-align: center;
+    padding-bottom: 20px;
+}
+
+.featuresTopSectionLeft h1 {
+    font-size: 35px;
+}
+
+.featuresTopSecitonRight {
+    grid-column: 1 / 12;
+}
+
+.featuresTopSecitonRight img {
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+@media screen and (min-width: 750px){
+    .featuresTopSectionLeft{
+        grid-column: 2 / 5;
+        text-align: left;
+        padding-bottom: 0px;
+    }
+
+    .featuresTopSecitonRight {
+        grid-column: 7 / 13;
+    }
+
+    .featuresTopSection {
+        padding: 0;
+    }
+    
+    .featuresTopSectionLeft h1 {
+        font-size: 50px;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .featuresTopSectionLeft h1 {
+        font-size: 70px;
+    }
+
+    .featuresTopSectionLeft{
+        grid-column: 2 / 8;
+    }
+
+    .featuresTopSecitonRight {
+        grid-column: 8 / 13;
+    }
+}
+}
+
+
+
+
+.featuresKeyFeaturesSection{
+    /* text-align: center; */
 }
 
 .featuresKeyFeaturesSection p {
-    padding: 0 10em;
+    /* padding: 0 10%; */
+    margin: auto;
+    width: 80%;
+
 }
 
-h1 {
-    font-size: 70px;
+/* h1 { 
+     font-size: 70px;
     line-height: 80px;
     letter-spacing: -0.03em;
-}
+} */
 
-h2 {
+.featuresKeyFeaturesSection h2 {
     font-weight: 800;
     font-size: 42px;
     line-height: 60px;
+    text-align: center;
 }
 
 .featureCards {
@@ -116,7 +218,8 @@ h2 {
 }
 
 .featuresFeaturedProjects p {
-    padding: 0 10em;
+    margin: auto;
+    width: 80%;
 }
 
 .festuresFeaturedProjectCards {
@@ -202,11 +305,17 @@ h2 {
     justify-content: center;
 }
 
+
 .featuresFeaturedProjects button {
     margin: 30px 10px;
-    width: 250px;
+    width: 150px;
 }
-
+@media screen and (min-width: 750px) {
+    .featuresFeaturedProjects button {
+        margin: 30px 10px;
+        width: 250px;
+    }
+}
 .specialButton {
     color: #00AEA5;
     background-color: #fff;
@@ -240,22 +349,63 @@ h2 {
 
 .featuresBottomSection {
     background-color: #00AEA5;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
     padding-left: 50px;
     color: #fff
 }   
 
-.featuresBottomSectionLeft h2 {
-
+.featuresBottomSectionLeft {
+    grid-column: 1 / 12;
 }
 
-.featuresBottomSecitonRight p {
+.featuresBottomSecitonRight {
+    grid-column: 1 / 12;
+}
 
+
+
+
+@media screen and (min-width: 750px){
+    .featuresBottomSectionLeft{
+        grid-column: 1 / 7;
+    }
+
+    .featuresBottomSecitonRight {
+        grid-column: 7 / 13;
+        
+    }
+
+    .featuresBottomSectionLeft h2 {
+        font-size: 50px;
+    }
+
+    .featuresBottomSecitonRight p {
+        font-size: 30px;
+    }
 }
 
 .featuresBottomSecitonRight img {
-    height: 100%;
+    display: block;
+    margin-left: auto;
+}
 
+@media screen and (max-width: 1500px) {
+    .featuresBottomSecitonRight img {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .featuresBottomSecitonRight img {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .featuresBottomSecitonRight img {
+        width: 95%;
+    }
 }
 
 .footer {
